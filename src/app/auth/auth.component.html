@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <div class="title">
+        Login
+    </div>
+    <form [formGroup]="formGroup" (ngSubmit)="signin()" >
+        <div class="field">
+            <input type="text"  name="email" formControlName="email">
+            <label>Email Address</label>
+        </div>
+        <div class="field">
+            <input type="password"  name="password"  formControlName="password"  minlength="6">
+            <label>Password</label>
+        </div>
+        <div class="content">
+            <div class="checkbox">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="pass-link">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+        <div class="field">
+            <!-- <input type="submit" value="Login"  > -->
+            <button type="submit" class="btt" >Login</button>
+        </div>
+        <div class="signup-link">
+            Not a member? <a href="#">Signup now</a>
+        </div>
+    </form>
+</div>

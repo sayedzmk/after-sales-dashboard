@@ -1,0 +1,19 @@
+<div class="table">
+    <table *ngIf="dataReady">
+        <tr>
+            <th>Categoiy Id</th>
+            <th>Categoiy Name</th>
+            <th>manufacturerId</th>
+            <th>pries</th>
+            <th>Edit</th>
+        </tr>
+        <tr *ngFor="let list of categoryList">
+            <td>{{list.serviceId}}</td>
+            <td>{{list.serviceName}}</td>
+            <td>{{list.manufacturerId}}</td>
+            <td>{{list.servicesPrices.length== 0 ? 0 : list.servicesPrices[0].serviceFees}}</td>
+            <td> <button type="button" class="btt" (click)="onEdit(list)">Edit </button></td>
+
+        </tr>
+    </table>
+</div>

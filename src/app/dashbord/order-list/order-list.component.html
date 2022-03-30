@@ -1,0 +1,17 @@
+<div class="table">
+    <table *ngIf="dataReady">
+        <tr>
+            <th>Order Id</th>
+            <th>Date</th>
+            <th>UserNote</th>
+            <th>ServiceName</th>
+        </tr>
+        <!-- <tr *ngFor="let list of ordersList"> -->
+        <tr *ngFor="let list of orderersList">
+            <td>{{list.orderId}}</td>
+            <td>{{list.requestDate}}</td>
+            <td>{{list.userNote}}</td>
+            <td>{{list.orders.length== 0 ? 0 : list.orders[1].serviceName}}</td>
+        </tr>
+    </table>
+</div>

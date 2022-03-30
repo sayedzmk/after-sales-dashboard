@@ -1,0 +1,20 @@
+<div class="table">
+    <table *ngIf="dataReady">
+        <tr>
+            <th>Manuficacturer Id</th>
+            <th>Manuficacturer Name</th>
+            <th>Manuficacturer Address</th>
+            <th>Manuficacturer disc</th>
+            <th>Manuficacturer Logo</th>
+            <th> Edit </th>
+        </tr>
+        <tr *ngFor="let list of manuficturersList">
+            <td>{{list.manufacturerId}}</td>
+            <td>{{list.manufacturerName}}</td>
+            <td>{{list.manufacturerAddress}}</td>
+            <td>{{list.manufacturerBio}}</td>
+            <td><img [src]="list.manufacturerLogo" alt="" width="50px" height="50px"></td>
+            <td> <button type="button" class="btt" (click)="onEdit(list)">Edit </button></td>
+        </tr>
+    </table>
+</div>

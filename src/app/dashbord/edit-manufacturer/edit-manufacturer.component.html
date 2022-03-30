@@ -1,0 +1,22 @@
+<div>
+    <form [formGroup]="manifacturerForm">
+        <h3>Manufacturers Edit</h3>
+        <br>
+        <label for="fname">Manufacturer Name</label>
+        <input type="text" name="firstname" placeholder="Your name.."  formControlName="name">
+
+        <label for="fname">Manufacturer Address</label>
+        <input type="text" name="adress" placeholder="Your address"  formControlName="address">
+
+        <label for="lname">Logo</label>
+        <br>
+        <input #imageInput type="file" accept="image/*" (change)="readImage(imageInput)" formControlName="logo">
+        <img *ngIf="image != null" [src]="image" alt="..." width="100" height="100">
+        <img *ngIf="image == null" [src]="data['manufacturerLogo']" alt="..." width="100" height="100">
+        <label for="lname">Description</label>
+        <br>
+        <textarea name="" id="" cols="10" rows="7" placeholder="Description.." formControlName="disc"></textarea>
+        <button type="button" class="btnn" (click)="onSubmit()">Update</button>
+    </form>
+
+</div>

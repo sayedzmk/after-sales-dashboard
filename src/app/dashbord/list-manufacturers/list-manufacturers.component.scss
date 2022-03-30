@@ -1,0 +1,32 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: white}
+  
+  th {
+    background-color: #042331;
+    color: white;
+  }
+  .table{
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 90%;
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+  .btt{
+    width: 100%;
+    padding: 4px;
+    color: #fff;
+    border: none;
+    background-color: #0a82b9;
+
+  }

@@ -1,0 +1,26 @@
+<div>
+    <form [formGroup]="categoryForm">
+        <h3>Categoiy Edit</h3>
+        <br>
+        <label for="fname">Categoiy Name</label>
+        <input type="text" name="firstname" placeholder="Your name.."  formControlName="name">
+        <label for="manufacturer">Manufacturer</label>
+
+        <select #manuf name="manufacturer" formControlName="manufId" (change)="changeSelect(manuf.value)">
+            <option *ngFor="let item of mList" [value]="item.manufacturerId">{{item.manufacturerName}}</option>
+        </select>
+
+        <label for="fname">Pries</label>
+        <input type="text" name="firstname" placeholder="Your pries.." formControlName="fees">
+
+        <label for="lname">Logo</label>
+        <br>
+        <input #imageInput type="file" accept="image/*" (change)="readImage(imageInput)" formControlName="logo">
+        <img *ngIf="image != null" [src]="image" alt="..." width="100" height="100">
+        <img *ngIf="image == null" [src]="data['manufacturerLogo']" alt="..." width="100" height="100">
+        <label for="lname">Description</label>
+        <br>
+        <button type="button" class="btnn" (click)="onSubmit()">Update</button>
+    </form>
+
+</div>

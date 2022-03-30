@@ -1,0 +1,89 @@
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color:#042331;
+  }
+  
+  
+  .btnn:hover {
+    background-color: #0bc6e7;
+  }
+.btnn{
+    width: 100%;
+    background-color: #042331;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: system-ui;
+}  
+  div {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 83%;
+    margin-left: 250px;
+  }
+  h3{
+      box-sizing: border-box;
+      width: 100%;
+      background-color:#042331 ;
+      padding: 15px;
+      margin: auto;
+      text-align: center;
+      border-radius: 10px;
+      color: white;
+      word-spacing: 5px;
+      letter-spacing: 2px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: white}
+  
+  th {
+    background-color: #042331;
+    color: white;
+  }
+  .table{
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 70%;
+    margin-left: 250px;
+  }
